@@ -11,6 +11,9 @@ Ext.define("ldg.view.Main", {
             },
             {
                 xtype: 'concertslist'
+            },
+            {
+                xtype: 'map'
             }
         ]
     }
