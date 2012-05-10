@@ -4,7 +4,7 @@ Ext.define('ldg.view.Map', {
 
     config: {
         title: 'Mapa',
-        iconCls: 'map',
+        iconCls: 'locate',
         useCurrentLocation: false,
         mapOptions: {
             center: new google.maps.LatLng(41.394833,2.148579),
