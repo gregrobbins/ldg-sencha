@@ -18,7 +18,7 @@ Ext.define('ldg.view.Concerts', {
             itemTpl: '{title}: {showDate}',
             store: {
                 autoLoad: true,
-                fields: ['showDate', 'showTime', 'title', 'desc_es'],
+                fields: ['showDate', 'showTime', 'title', 'desc_es', 'filename'],
                 proxy: {
                     type: 'jsonp',
                     url: 'http://192.168.1.101:8888/schedule',
