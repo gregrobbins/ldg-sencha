@@ -21,7 +21,7 @@ Ext.define('ldg.view.Concerts', {
                 fields: ['showDate', 'showTime', 'title', 'desc_es', 'filename'],
                 proxy: {
                     type: 'jsonp',
-                    url: 'http://192.168.1.101:8888/schedule',
+                    url: 'http://ldg.aaa-mailhost.net/schedule',
                     reader: {
                         type: 'json',
                         rootProperty: 'items'
