@@ -8,11 +8,10 @@ Ext.define('ldg.view.Home', {
         scrollable: true,
         styleHtmlContent: true,
         html: [
-            '<img src="http://staging.sencha.com/img/sencha.png" />',
-            '<h1>Welcome to Sencha Touch</h1>',
-            "<p>You're creating the Getting Started app. This demonstrates how ",
-            "to use tabs, lists and forms to create a simple app</p>",
-            '<h2>Sencha Touch (2.0.0)</h2>'
+            '<h1>Bienvenidos a Luz de Gas</h1>',
+            '<img src="/resources/images/ldg.png" />',
+            "<p>Abierto todos los d&iacute;as del a&ntilde;o de 21h a 6h.</p>",
+            "<p>Muntaner 246, Barcelona</p>"
         ].join("")
     }
 });
