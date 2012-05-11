@@ -10,7 +10,7 @@ Ext.define('ldg.view.Concerts', {
 
     config: {
         title: 'Conciertos',
-        iconCls: 'star',
+        iconCls: 'music1',
         items: {
             title: 'Pr&oacute;ximos Conciertos',
             autoLoad: true,
