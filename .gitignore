@@ -2,3 +2,4 @@
 *.swo
 /build
 /sdk-*-backup
+resources/sass/.sass-cache
