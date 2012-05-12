@@ -1,8 +1,11 @@
-$base-color: #2a2a2a;
-$active-color: #847040;
+$base-color: #56555A;
+$active-color: #7F0102;
 $base-gradient: 'glossy';
-$page-bg-color: #000000;
-$neutral-color: #000000;
+$page-bg-color: black;
+$neutral-color: grey;
+$list-bg-color: #666;
+$list-active-color: #999;
+$list-color: white;
 
 @import 'sencha-touch/default/all';
 
@@ -10,6 +13,7 @@ $neutral-color: #000000;
 // do not use in order to create a smaller css file.
 @include sencha-panel;
 @include sencha-buttons;
+@include sencha-button-ui('orange',#ff8000,'glossy');
 // @include sencha-sheet;
 // @include sencha-picker;
 @include sencha-tabs;
@@ -25,3 +29,23 @@ $neutral-color: #000000;
 // Your custom code goes here...
 
 @include pictos-iconmask('music1');
+
+.x-html h1, .x-html h2, .x-html h3, .x-html h4, .x-html h5, .x-html h6 {
+    font-weight: normal;
+    color: #cecece;
+}
+.x-html {
+    line-height: 1.5;
+    color: #cecece;
+    font-size: .8em;
+}
+.home {
+    img.logo {
+        float: left;
+        padding-right: 1em;
+        padding-bottom: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}

@@ -5,13 +5,46 @@ Ext.define('ldg.view.Home', {
     config: {
         title: 'Luz de Gas',
         iconCls: 'home',
+        baseCls: 'home',
         scrollable: true,
         styleHtmlContent: true,
-        html: [
-            '<h1>Bienvenidos a Luz de Gas</h1>',
-            '<img src="/resources/images/ldg.png" />',
-            "<p>Abierto todos los d&iacute;as del a&ntilde;o de 21h a 6h.</p>",
-            "<p>Muntaner 246, Barcelona</p>"
-        ].join("")
+        listeners: {
+            painted: function() {
+                window.fbAsyncInit = function() {
+                    FB.init({appId: '273989562666616', status: true, cookie: true, xfbml: true, oauth: true});
+                };
+                (function() {
+                    var e = document.createElement('script');
+                    e.type = 'text/javascript';
+                    e.src = document.location.protocol + '//connect.facebook.net/ca_ES/all.js';
+                    e.async = true;
+                    document.getElementById('fb-root').appendChild(e);
+                }());
+            }
+        },
+        items: [
+            {
+                xtype: 'container',
+                html: [
+                    '<img class="logo" src="/resources/images/ldg100w.png" />',
+                    '<h1>Luz de Gas</h1>',
+                    '<p>',
+                    "Abierto todos los d&iacute;as del a&ntilde;o de 21h a 6h.",
+                    '<br />',
+                    "Muntaner 246, Barcelona",
+                    '</p>',
+                    //'<div class="fb-like" data-href="http://www.facebook.com/luzdegasclub" data-layout="button_count" data-width="190" data-show-faces="false" data-colorscheme="dark"></div>',
+                    //'<div class="fb-like" data-href="http://www.facebook.com/luzdegasclub" data-send="false" data-width="190" data-show-faces="true" data-colorscheme="dark"></div>',
+                    '<div class="fb-like" data-href="http://www.facebook.com/luzdegasclub" data-send="false" data-layout="box_count" data-width="190" data-show-faces="false" data-colorscheme="dark"></div>',
+                    '<div id="fb-root"></div>'
+                ].join("")
+            },
+            {
+                xtype: 'container',
+                html: [
+                    'More stuff here'
+                ]
+            }
+        ]
     }
 });
