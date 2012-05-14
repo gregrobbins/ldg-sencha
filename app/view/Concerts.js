@@ -1,33 +1,30 @@
 Ext.define('ldg.view.Concerts', {
     extend: 'Ext.navigation.View',
-    xtype: 'concertslist',
+    xtype: 'concertspanel',
 
     requires: [
-        'Ext.dataview.List',
-        'Ext.data.proxy.JsonP',
-        'Ext.data.Store'
+        'ldg.view.ConcertList',
+        'ldg.view.ConcertDetail',
     ],
 
     config: {
-        title: 'Conciertos',
         iconCls: 'music1',
-        items: {
-            title: 'Pr&oacute;ximos Conciertos',
-            autoLoad: true,
-            xtype: 'list',
-            itemTpl: '{title}: {showDate}',
-            store: {
-                autoLoad: true,
-                fields: ['showDate', 'showTime', 'title', 'desc_es', 'filename'],
-                proxy: {
-                    type: 'jsonp',
-                    url: 'http://ldg.aaa-mailhost.net/schedule',
-                    reader: {
-                        type: 'json',
-                        rootProperty: 'items'
-                    }
-                }
-            }
-        }
-    }
+        title: 'Conciertos',
+        items: [{
+            xtype: 'concertlist',
+        }],
+        // navigationBar: {
+        //     ui: 'dark',
+        //     docked: 'bottom',
+        //     items: [
+        //         {
+        //             xtype: 'button',
+        //             ui: 'back',
+        //             action: 'back',
+        //             text:'BACK',
+        //             itemId: 'backButton'
+        //         },
+        //     ]
+        // },
+    },
 });
