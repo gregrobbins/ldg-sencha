@@ -26,7 +26,7 @@ Ext.define('ldg.view.Home', {
             {
                 xtype: 'container',
                 html: [
-                    '<img class="logo" src="/resources/images/ldg100w.png" />',
+                    '<img class="logo" src="./resources/images/ldg100w.png" />',
                     '<h1>Luz de Gas</h1>',
                     '<p>',
                     "Abierto todos los d&iacute;as del a&ntilde;o de 21h a 6h.",
