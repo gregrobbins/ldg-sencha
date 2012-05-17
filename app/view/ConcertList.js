@@ -5,7 +5,7 @@ Ext.define('ldg.view.ConcertList', {
 
     config: {
         title: 'Concerts',
-        itemTpl: '{title}: {showDate}',
+        itemTpl: '{title}<br/><time>{showDate}</time>',
         store: 'Concerts',
         onItemDisclosure: true,
     }

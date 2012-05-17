@@ -1,9 +1,10 @@
-$base-color: #56555A;
-$active-color: #7F0102;
+$base-color: #aaa;
+// $base-color: #580603;
+$active-color: #dedede;
 $base-gradient: 'glossy';
 $page-bg-color: black;
 $neutral-color: grey;
-$list-bg-color: #666;
+$list-bg-color: #333;
 $list-active-color: #999;
 $list-color: white;
 
@@ -48,4 +49,7 @@ $list-color: white;
     h1 {
         font-size: 2em;
     }
+}
+.x-list time {
+    font-size: 0.8em;
 }
