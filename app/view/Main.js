@@ -16,6 +16,9 @@ Ext.define("ldg.view.Main", {
             },
             {
                 xtype: 'map'
+            },
+            {
+                xtype: 'gallerypanel'
             }
         ]
     }
