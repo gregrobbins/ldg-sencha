@@ -13,18 +13,5 @@ Ext.define('ldg.view.Concerts', {
         items: [{
             xtype: 'concertlist',
         }],
-        // navigationBar: {
-        //     ui: 'dark',
-        //     docked: 'bottom',
-        //     items: [
-        //         {
-        //             xtype: 'button',
-        //             ui: 'back',
-        //             action: 'back',
-        //             text:'BACK',
-        //             itemId: 'backButton'
-        //         },
-        //     ]
-        // },
     },
 });

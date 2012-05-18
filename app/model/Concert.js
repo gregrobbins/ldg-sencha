@@ -12,12 +12,16 @@ Ext.define('ldg.model.Concert', {
     },
     getFullDate: function(){
         var d = this.data;
-        dateStuff = [
+        var dateStuff = [
             d.showDate,
             'a las',
             d.showTime,
             'h'
         ];
         return dateStuff.join(' ');
+    },
+    getImagePlaceholder: function() {
+        var image = null == this.data.filename ? '' : '<img src="http://www.luzdegas.com/img_perf/' + this.data.filename +'">';
+        return image;
     }
 });

@@ -8,7 +8,10 @@ Ext.define('ldg.view.ConcertList', {
         itemTpl: '{title}<br/><time>{showDate}</time>',
         store: 'Concerts',
         onItemDisclosure: true,
-    }
-
-
+    },
+    // initialize: function(options) {
+    //     console.log('initialized!!');
+    //     console.dir(this);
+    //     console.dir(options);
+    // }
 });

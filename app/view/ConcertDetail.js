@@ -4,12 +4,11 @@ Ext.define('ldg.view.ConcertDetail', {
     config: {
         styleHtmlContent: true,
         scrollable: true,
-        title: '{title}',
-        //tpl: 'Detail for {title}',
         tpl: [
-            '<strong>{showDate} a las {showTime}h</strong><br/>',
+            '<strong>{fulldate}</strong><br/>',
             '<p>{desc_es}</p>',
-            '<img src="http://www.luzdegas.com/img_perf/{filename}">',
+            //'<img src="http://www.luzdegas.com/img_perf/{filename}">',
+            '{image}'
         ].join('')
     }
 });

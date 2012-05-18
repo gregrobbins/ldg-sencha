@@ -1,6 +1,6 @@
 Ext.define('ldg.controller.Main', {
     extend: 'Ext.app.Controller',
-    
+
     config: {
         refs: {
             concerts: 'concertspanel',
@@ -13,10 +13,12 @@ Ext.define('ldg.controller.Main', {
     },
 
     showDetail: function(list, record) {
+        record.data.fulldate = record.getFullDate();
+        record.data.image = record.getImagePlaceholder();
         this.getConcerts().push({
             xtype: 'concertdetail',
             title: record.data.title,
-            data: record.data
+            data: record.data,
         });
     }
 });
