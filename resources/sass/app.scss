@@ -30,6 +30,7 @@ $list-color: white;
 // Your custom code goes here...
 
 @include pictos-iconmask('music1');
+@include pictos-iconmask('photos2');
 
 .x-html h1, .x-html h2, .x-html h3, .x-html h4, .x-html h5, .x-html h6 {
     font-weight: normal;
