@@ -4,16 +4,28 @@ Ext.define('ldg.view.Gallery', {
 
     config: {
         title: 'Fotos',
-        iconCls: 'photo',
+        iconCls: 'photos2',
         baseCls: 'home',
         scrollable: true,
         styleHtmlContent: true,
         items: [
             {
+                docked: 'top',
+                xtype: 'toolbar',
+                title: 'Fotos'
+            },
+            {
                 xtype: 'container',
                 html: [
-                    '<img class="logo" src="./resources/images/ldg100w.png" />',
-                    '<h1>Im&aacute;genes de Luz de Gas</h1>',
+                    "<script src='http://src.sencha.io/screen.js'></script>",
+                    '<img src="http://src.sencha.io/sw/http://www.luzdegas.com/img_big/aluz9544.jpg" />',
+                    '<img src="http://src.sencha.io/sw/http://www.luzdegas.com/img_big/luz1159.jpg" />',
+                    '<img src="http://src.sencha.io/sw/http://www.luzdegas.com/img_big/luz1161.jpg" />',
+                    '<img src="http://src.sencha.io/sw/http://www.luzdegas.com/img_big/luz1165.jpg" />',
+                    '<img src="http://src.sencha.io/sw/http://www.luzdegas.com/img_big/luz1166.jpg" />',
+                    '<img src="http://src.sencha.io/sw/http://www.luzdegas.com/img_big/luz1170.jpg" />',
+                    '<img src="http://src.sencha.io/sw/http://www.luzdegas.com/img_big/luz1176.jpg" />',
+                    '<img src="http://src.sencha.io/sw/http://www.luzdegas.com/img_big/luz1178.jpg" />',
                 ].join("")
             },
         ]
