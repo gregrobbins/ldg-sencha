@@ -3,7 +3,7 @@ Ext.define('ldg.profile.Phone', {
 
     config: {
         name: 'Phone',
-        views: ['Gallery']
+        views: ['Home']
     },
 
     isActive: function() {

@@ -3,7 +3,7 @@ Ext.application({
     name: 'ldg',
     profiles: ['Phone', 'Tablet'],
     controllers: ['Main'],
-    views: ['Main','Home','Concerts','Map', 'Gallery'],
+    views: ['Main','Concerts','Map','Gallery'],
     models: ['Concert'],
     stores: ['Concerts'],
 

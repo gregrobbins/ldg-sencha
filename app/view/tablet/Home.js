@@ -1,4 +1,4 @@
-Ext.define('ldg.view.Home', {
+Ext.define('ldg.view.tablet.Home', {
     extend: 'Ext.Panel',
     xtype: 'homepanel',
 
@@ -29,7 +29,7 @@ Ext.define('ldg.view.Home', {
                     // '<h1>Luz de Gas</h1>',
                     '<img class="logo" src="./resources/images/ldg300w.png" />',
                     '<p>',
-                    "MAIN: Abierto todos los d&iacute;as del a&ntilde;o de 21h a 6h.",
+                    "TABLET: Abierto todos los d&iacute;as del a&ntilde;o de 21h a 6h.",
                     '<br />',
                     "Muntaner 246, Barcelona",
                     '</p>',
@@ -39,12 +39,6 @@ Ext.define('ldg.view.Home', {
                     '<div id="fb-root"></div>'
                 ].join("")
             },
-            // {
-            //     xtype: 'container',
-            //     html: [
-            //         'More stuff here'
-            //     ]
-            // }
         ]
     }
 });

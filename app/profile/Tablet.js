@@ -3,7 +3,7 @@ Ext.define('ldg.profile.Tablet', {
 
     config: {
         name: 'Tablet',
-        views: ['Gallery']
+        views: ['Home']
     },
 
     isActive: function() {
